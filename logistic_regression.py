@@ -101,6 +101,10 @@ def train(features, targets, weights, bias):
     predictions = predict(features, weights, bias)
     print("Accuracy = %s" % np.mean(predictions == targets))
 
+    # Plot points
+    plt.scatter(features[:, 0], features[:, 1], s=40, c=targets, cmap=plt.cm.Spectral)
+    plt.show()
+
     for epoch in range(epochs):
         # Compute and display the cost every 10 epoch
         if epoch % 10 == 0:
