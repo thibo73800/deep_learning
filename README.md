@@ -1,1 +1,1 @@
-# udemy_deep_learning
+# deep_learning
